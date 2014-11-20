@@ -4,7 +4,7 @@
       <div class="col-md-4">
         <% image_tag @movie.image.url(:medium) %>
         <div class="table-responsive">
-          <div class="table">
+          <table class="table">
             <tbody>
               <tr>
               <td><strong>Title:</strong></td>
@@ -27,7 +27,7 @@
                 <td><%= @movie.rating %></td>
               </tr>
             </tbody>
-          </div>
+          </table>
         </div>
       </div>
     </div>
