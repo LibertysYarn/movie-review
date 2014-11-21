@@ -8,13 +8,14 @@ gem 'jquery-rails', '~> 4.0.0.beta2'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
-gem 'devise', '~>3.4.0'
-gem 'paperclip', '~>4.2.0'
-gem 'bootstrap-sass', '~>3.2.0.2'
+gem 'devise', '~>3.4.1'
+gem 'paperclip', '4.2.0'
+gem 'bootstrap-sass', '~> 3.3.1.0'
 gem 'autoprefixer-rails'
+gem 'searchkick', '0.8.5'
 
 group :development, :test do
   gem 'byebug'
-  gem 'web-console', '~> 2.0.0.beta4'
+# gem 'web-console', '~> 2.0.0.beta4'
   gem 'spring'
 end
