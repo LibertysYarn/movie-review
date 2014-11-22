@@ -1,14 +1,12 @@
 Rails.application.routes.draw do
-
-
-  devise_for :users
   resources :movies do
-    collection do
-      get 'seach'
-    end
     resources :reviews, except: [:show,:index]
   end
 
+  match 'search', to: 'movies#search', via: :get
+
   root "movies#index"
+
+  devise_for :users
 
 end

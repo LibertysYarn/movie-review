@@ -21,12 +21,12 @@
           <li><%= link_to "Sign In", new_user_session_path, class: "active" %></li>
         <% end %>
       </ul>
-        <p>
-      <% form_tag class: "navbar-form navbar-right", role: "search" do %>
-          <% text_field_tag :search, params[:search], class: "form-control" %>
-          <% submit_tag "Search", name: nil, class: "btn btn-default" %>
-      <% end %>
-        </p>
+      <div class="navbar-right navbar-form">
+          <%= form_tag("/search", method: "get") do %>
+          <%= text_field_tag 'search', nil, placeholder: 'Enter search term...', class: 'form-control' %>
+          <%= submit_tag 'Search', name: nil, class: 'btn btn-default' %>
+          <% end %>
+      </div>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>

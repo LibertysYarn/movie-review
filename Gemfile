@@ -13,6 +13,7 @@ gem 'paperclip', '4.2.0'
 gem 'bootstrap-sass', '~> 3.3.1.0'
 gem 'autoprefixer-rails'
 gem 'searchkick', '0.8.5'
+gem 'ratyrate'
 
 group :development, :test do
   gem 'byebug'
