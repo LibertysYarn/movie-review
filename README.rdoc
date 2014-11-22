@@ -6,7 +6,7 @@ changes made to update from Rails 4.1.5 to Rails 4.2.0beta4
 
 The form_tag no longer allows built in div's. The navbar search form around line#24
 
-```HTML (Ruby-ERB)
+```text.html.erb
 <div class="navbar-right navbar-form">
     <%= form_tag("/search", method: "get") do %>
     <%= text_field_tag 'search', nil, placeholder: 'Enter search term...', class: 'form-control' %>
@@ -20,7 +20,7 @@ The form_tag no longer allows built in div's. The navbar search form around line
 
 I wasn't able to make searchkick work with the nested resource - I removed the 'collection do' block and added this below the resource:movie. Also moved the devise block to the bottom.
 
-```Ruby
+```ruby
 match 'search', to: 'movies#search', via: :get
 ```
 
@@ -29,6 +29,6 @@ match 'search', to: 'movies#search', via: :get
 
 The new asset digest feature kept the raty stars from loading so I changed the config to false (around line #32).
 
-```Ruby
+```ruby
 config.assets.digest = false
 ```
