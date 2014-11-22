@@ -1,4 +1,4 @@
-This is a movie review site built from MackenzieChild's tutorial in Rails 4.2.0beta4
+This is a movie review site built from MackenzieChild's tutorial[mackenziechild.me/how-to-build-a-movie-review-app-in-rails-4/] in Rails 4.2.0beta4
 
 changes made to update from Rails 4.1.5 to Rails 4.2.0beta4
 
