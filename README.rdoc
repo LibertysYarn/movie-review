@@ -3,7 +3,7 @@ This is a movie review site built from MackenzieChild's tutorial in Rails 4.2.0b
 changes made to update from Rails 4.1.5 to Rails 4.2.0beta4
 
 **app/views/layouts/_header.html.erb**
-The navbar search form around line#24
+The form_tag no longer allows built in div's. The navbar search form around line#24
 ```
 <div class="navbar-right navbar-form">
     <%= form_tag("/search", method: "get") do %>
